@@ -1,0 +1,78 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "preIDO": "Pre-IDO",
+        "whitepaper": "Libro blanco",
+        "faq": "Preguntas frecuentes",
+        "connectWallet": "Conectar billetera",
+        "backToHomepage": "Volver al inicio"
+    },
+    "hero": {
+        "formula": "Precio WIN = USDT total en reserva / WIN total en circulación",
+        "buyingTitle": "Comprar impulsa el precio al alza",
+        "buyingDesc": "Cada compra agrega USDT a la Reserva para acuñar WIN. Gracias a la quema deflacionaria, el valor de la Reserva crece más rápido que la nueva oferta de tokens, forzando matemáticamente el precio al alza.",
+        "sellingTitle": "Vender también hace subir el precio",
+        "sellingDesc": "Las ventas retiran WIN de la circulación permanentemente mientras devuelven USDT de la Reserva. La Reserva se mantiene robusta y la oferta se reduce, creando presión al alza en el precio.",
+        "swappingTitle": "El intercambio alimenta el crecimiento perpetuo",
+        "swappingDesc": "Después del lanzamiento, cada intercambio en WinSwap quema un pequeño % de WIN, reduciendo la oferta y haciendo que los tokens restantes sean más valiosos.",
+        "howItWorks": "Cómo funciona",
+        "detailed1_1": "AlwaysWin es un protocolo DeFi diseñado para hacer crecer el valor de las criptomonedas de una manera más predecible. ",
+        "detailed1_2": "En lugar de depender del bombo o el momento del mercado, utiliza reglas inmutables en cadena para aumentar de manera constante el precio mínimo de WIN con cada transacción.",
+        "detailed2_1": "WIN está respaldado por una reserva USDT creciente, y cada interacción con el protocolo, ya sea comprando, vendiendo o usando aplicaciones del ecosistema, quema tokens automáticamente. ",
+        "detailed2_2": "Esta reducción permanente del suministro mejora continuamente la Ratio de Reserva, asegurando que cada WIN restante esté respaldado por más USDT, lo que empuja el precio mínimo hacia arriba matemáticamente.",
+        "detailed3_1": "En lugar de enfrentar a los usuarios entre sí, AlwaysWin alinea a todos hacia el mismo resultado: crecimiento de valor a largo plazo. ",
+        "detailed3_2": "Cada acción fortalece el sistema, y cada participante se beneficia de su diseño ascendente."
+    },
+    "whyWorks": {
+        "title": "Por qué funciona AlwaysWin",
+        "subtitle": "Construido sobre matemáticas claras, incentivos transparentes y una estructura diseñada para mantener el valor en aumento para cada participante",
+        "priceUpTitle": "Precio que solo sube",
+        "priceUpDesc": "El valor de WIN aumenta matemáticamente con cada compra y cada venta. Una oferta en constante disminución y una reserva USDT en crecimiento garantizan una apreciación sostenida.",
+        "backedTitle": "Completamente respaldado desde el primer día",
+        "backedDesc": "Cada token WIN siempre está respaldado por USDT real almacenado en la reserva del protocolo. Sin dilución, sin proveedores de liquidez externos, sin riesgos de contraparte ocultos.",
+        "alignedTitle": "Incentivos alineados contigo",
+        "alignedDesc": "Estamos alineando tus intereses con los de todos los demás participantes en el mercado. Nos despedimos del depredador 'Juego de suma cero' (donde uno gana solo si otro pierde)."
+    },
+    "valueGrowth": {
+        "title": "AlwaysWin hace que WIN crezca en valor por diseño.",
+        "description": "Cada compra, venta o interacción de aplicación quema algo de WIN, reduciendo la oferta mientras la reserva USDT se mantiene fuerte. Con menos tokens y una reserva estable, el precio mínimo sigue aumentando automáticamente.",
+        "readMore": "Leer más"
+    },
+    "protocolJourney": {
+        "title": "Nuestro viaje del protocolo",
+        "subtitle": "Desde la participación temprana hasta la utilidad completa del ecosistema, cada fase fortalece la reserva y empuja el precio mínimo más alto.",
+        "phase1Title": "Fase 1: Pre-IDO",
+        "phase1Desc": "Estás aquí, precio más bajo.",
+        "phase2Title": "Fase 2: Rifa-IDO",
+        "phase2Desc": "Descubrimiento de precio público",
+        "phase3Title": "Fase 3: WinSwap",
+        "phase3Desc": "Crecimiento perpetuo activado"
+    },
+    "getInEarly": {
+        "title": "Entra temprano. Gana desde el primer día.",
+        "description": "Ingresa a la fase Pre-IDO para adquirir WIN antes de que la reserva crezca y el precio avance a su siguiente nivel.",
+        "joinPreIDO": "Unirse a Pre-IDO",
+        "learnMore": "Aprender más"
+    },
+    "faq": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "¿Buscas más respuestas? Explora nuestro FAQ completo para explicaciones detalladas.",
+        "viewFull": "Ver FAQ completo",
+        "q1": "¿Qué garantiza el crecimiento del precio?",
+        "a1": "La fórmula matemática P = R/C garantiza el crecimiento del precio a medida que la reserva (R) aumenta y la oferta en circulación (C) disminuye con cada transacción.",
+        "q2": "¿Cómo es posible que el precio WIN en WinSwap no baje?",
+        "a2": "La curva de vinculación y el mecanismo de quema de WinSwap garantizan que el precio solo puede subir. Cada transacción quema tokens mientras mantiene la estabilidad de la reserva.",
+        "q3": "¿Qué es la Rifa-IDO y qué puedo ganar?",
+        "a3": "La Rifa-IDO es un mecanismo justo de descubrimiento de precios donde los participantes pueden ganar tokens WIN de bonificación y recompensas exclusivas.",
+        "q4": "¿Cómo participo en la Pre-IDO?",
+        "a4": "Conecta tu billetera y compra tokens WIN al precio más bajo durante la fase Pre-IDO.",
+        "q5": "¿Cuándo se lanza WinSwap?",
+        "a5": "WinSwap se lanza después de que se complete la fase Rifa-IDO, activando el mecanismo de crecimiento perpetuo."
+    },
+    "footer": {
+        "copyright": "2022-2025 - AlwaysWin.",
+        "privacy": "Política de privacidad",
+        "risk": "Advertencia de riesgo",
+        "terms": "Términos de servicio"
+    }
+}

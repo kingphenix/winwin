@@ -1,0 +1,78 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "preIDO": "Pré-IDO",
+        "whitepaper": "Livre blanc",
+        "faq": "FAQ",
+        "connectWallet": "Connecter le portefeuille",
+        "backToHomepage": "Retour à l'accueil"
+    },
+    "hero": {
+        "formula": "Prix WIN = USDT total en réserve / WIN total en circulation",
+        "buyingTitle": "L'achat fait monter le prix",
+        "buyingDesc": "Chaque achat ajoute de l'USDT à la réserve pour créer du WIN. Grâce au mécanisme déflationniste, la valeur de la réserve augmente plus vite que l'offre de nouveaux jetons, forçant mathématiquement le prix à la hausse.",
+        "sellingTitle": "La vente fait également grimper le prix",
+        "sellingDesc": "Les ventes retirent définitivement du WIN de la circulation tout en restituant de l'USDT de la réserve. La réserve reste solide et l'offre diminue, créant une pression à la hausse sur le prix.",
+        "swappingTitle": "L'échange alimente la croissance perpétuelle",
+        "swappingDesc": "Après le lancement, chaque échange sur WinSwap brûle un petit % de WIN, réduisant l'offre et rendant les jetons restants plus précieux.",
+        "howItWorks": "Comment ça marche",
+        "detailed1_1": "AlwaysWin est un protocole DeFi conçu pour faire croître la valeur des cryptomonnaies de manière plus prévisible. ",
+        "detailed1_2": "Au lieu de s'appuyer sur le battage médiatique ou le timing du marché, il utilise des règles immuables sur la chaîne pour augmenter régulièrement le prix plancher de WIN à chaque transaction.",
+        "detailed2_1": "WIN est soutenu par une réserve USDT croissante, et chaque interaction avec le protocole par l'achat, la vente ou l'utilisation d'applications écosystémiques brûle automatiquement des jetons. ",
+        "detailed2_2": "Cette réduction permanente de l'offre améliore continuellement le ratio de réserve, garantissant que chaque WIN restant est soutenu par plus d'USDT, ce qui pousse mathématiquement le prix plancher vers le haut.",
+        "detailed3_1": "Plutôt que d'opposer les utilisateurs les uns aux autres, AlwaysWin aligne tout le monde autour du même résultat : la croissance de la valeur à long terme. ",
+        "detailed3_2": "Chaque action renforce le système, et chaque participant bénéficie de sa conception ascendante."
+    },
+    "whyWorks": {
+        "title": "Pourquoi AlwaysWin fonctionne",
+        "subtitle": "Basé sur des mathématiques claires, des incitations transparentes et une structure conçue pour maintenir la valeur en hausse pour chaque participant",
+        "priceUpTitle": "Prix qui n'augmente que",
+        "priceUpDesc": "La valeur de WIN augmente mathématiquement à chaque achat et à chaque vente. Une offre en constante diminution et une réserve USDT croissante garantissent une appréciation soutenue.",
+        "backedTitle": "Entièrement garanti dès le premier jour",
+        "backedDesc": "Chaque jeton WIN est toujours soutenu par de l'USDT réel stocké dans la réserve du protocole. Pas de dilution, pas de fournisseurs de liquidité externes, pas de risques de contrepartie cachés.",
+        "alignedTitle": "Incitations alignées avec vous",
+        "alignedDesc": "Nous alignons vos intérêts avec ceux de tous les autres participants du marché. Nous disons adieu au 'Jeu à somme nulle' prédateur (où l'un ne gagne que si l'autre perd)."
+    },
+    "valueGrowth": {
+        "title": "AlwaysWin fait croître la valeur de WIN par conception.",
+        "description": "Chaque achat, vente ou interaction d'application brûle du WIN, réduisant l'offre tandis que la réserve USDT reste forte. Avec moins de jetons et une réserve stable, le prix plancher continue d'augmenter automatiquement.",
+        "readMore": "En savoir plus"
+    },
+    "protocolJourney": {
+        "title": "Notre parcours protocolaire",
+        "subtitle": "De la participation précoce à l'utilité complète de l'écosystème, chaque phase renforce la réserve et pousse le prix plancher vers le haut.",
+        "phase1Title": "Phase 1 : Pré-IDO",
+        "phase1Desc": "Vous êtes ici, prix le plus bas.",
+        "phase2Title": "Phase 2 : Tombola-IDO",
+        "phase2Desc": "Découverte de prix public",
+        "phase3Title": "Phase 3 : WinSwap",
+        "phase3Desc": "Croissance perpétuelle activée"
+    },
+    "getInEarly": {
+        "title": "Entrez tôt. Gagnez dès le premier jour.",
+        "description": "Entrez dans la phase Pré-IDO pour acquérir WIN avant que la réserve ne croisse et que le prix n'avance à son niveau suivant.",
+        "joinPreIDO": "Rejoindre la Pré-IDO",
+        "learnMore": "En savoir plus"
+    },
+    "faq": {
+        "title": "Questions fréquemment posées",
+        "subtitle": "Vous cherchez plus de réponses ? Explorez notre FAQ complète pour des explications détaillées.",
+        "viewFull": "Voir la FAQ complète",
+        "q1": "Qu'est-ce qui garantit la croissance des prix ?",
+        "a1": "La formule mathématique P = R/C garantit la croissance des prix lorsque la réserve (R) augmente et que l'offre en circulation (C) diminue à chaque transaction.",
+        "q2": "Comment est-il possible que le prix WIN dans WinSwap ne baisse pas ?",
+        "a2": "La courbe de liaison et le mécanisme de combustion de WinSwap garantissent que le prix ne peut qu'augmenter. Chaque transaction brûle des jetons tout en maintenant la stabilité de la réserve.",
+        "q3": "Qu'est-ce que la Tombola-IDO et que puis-je gagner ?",
+        "a3": "La Tombola-IDO est un mécanisme équitable de découverte des prix où les participants peuvent gagner des jetons WIN bonus et des récompenses exclusives.",
+        "q4": "Quelle est la tokenomics de WIN ?",
+        "a4": "La tokenomics de WIN repose sur un modèle déflationniste où chaque transaction brûle un pourcentage de l'offre, tout en maintenant une réserve USDT à 100 %.",
+        "q5": "Quand se termine la Pré-IDO ?",
+        "a5": "La phase de Pré-IDO se termine une fois que l'allocation initiale est entièrement souscrite ou lorsque le compte à rebours atteint zéro."
+    },
+    "footer": {
+        "copyright": "2022-2025 - AlwaysWin.",
+        "privacy": "Politique de confidentialité",
+        "risk": "Avertissement sur les risques",
+        "terms": "Conditions d'utilisation"
+    }
+}

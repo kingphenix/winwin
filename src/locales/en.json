@@ -1,0 +1,78 @@
+{
+    "nav": {
+        "home": "Home",
+        "preIDO": "Pre-IDO",
+        "whitepaper": "Whitepaper",
+        "faq": "FAQ",
+        "connectWallet": "Connect Wallet",
+        "backToHomepage": "Back to Homepage"
+    },
+    "hero": {
+        "formula": "WIN Price = Total USDT in Reserve / Total Circulating WIN",
+        "buyingTitle": "Buying Drives the Price Up",
+        "buyingDesc": "Every buy adds USDT to the Reserve to mint WIN. Thanks to the deflationary burn, the Reserve value grows faster than the new token supply, mathematically forcing the price higher.",
+        "sellingTitle": "Selling Also Drives the Price Up",
+        "sellingDesc": "Sells remove WIN from circulation permanently while returning USDT from the Reserve. The Reserve stays robust, and the supply shrinks, creating upward pressure on price.",
+        "swappingTitle": "Swapping Fuels Perpetual Growth",
+        "swappingDesc": "After launch, every swap on WinSwap burns a small % of WIN, shrinking supply and making remaining tokens more valuable.",
+        "howItWorks": "How It Works",
+        "detailed1_1": "AlwaysWin is a DeFi protocol designed to make crypto value grow in a more predictable way. ",
+        "detailed1_2": "Instead of relying on hype or market timing, it uses immutable on-chain rules to steadily increase WIN's price floor with every transaction.",
+        "detailed2_1": "WIN is backed by a growing USDT reserve, and every interaction with the protocol through buying, selling, or using ecosystem apps automatically burns tokens. ",
+        "detailed2_2": "This permanent reduction in supply continuously improves the Reserve Ratio, ensuring each remaining WIN is backed by more USDT, which mathematically pushes the price floor higher.",
+        "detailed3_1": "Rather than pitting users against each other, AlwaysWin aligns everyone around the same outcome: long-term value growth. ",
+        "detailed3_2": "Every action strengthens the system, and every participant benefits from its upward design."
+    },
+    "whyWorks": {
+        "title": "Why AlwaysWin Works",
+        "subtitle": "Built on clear math, transparent incentives, and a structure designed to keep value rising for every participant",
+        "priceUpTitle": "Price That Only Moves Up",
+        "priceUpDesc": "WIN's value increases mathematically with every buy and every sell. A permanently shrinking supply and a growing USDT reserve ensure sustained appreciation.",
+        "backedTitle": "Fully Backed From Day One",
+        "backedDesc": "Each WIN token is always backed by real USDT stored in the protocol's reserve. No dilution, no external liquidity providers, no hidden counterparty risks.",
+        "alignedTitle": "Incentives Aligned With You",
+        "alignedDesc": "We are aligning your interests with those of all other participants in the market. We are saying goodbye to the predatory 'Zero-Sum Game' (where one wins only if another loses)."
+    },
+    "valueGrowth": {
+        "title": "AlwaysWin makes WIN grow in value by design.",
+        "description": "Every buy, sell, or app interaction burns some WIN, reducing supply while the USDT reserve stays strong. With fewer tokens and a stable reserve, the price floor keeps rising automatically.",
+        "readMore": "Read More"
+    },
+    "protocolJourney": {
+        "title": "Our Protocol Journey",
+        "subtitle": "From early participation to full ecosystem utility, each phase strengthens the reserve and pushes the price floor higher.",
+        "phase1Title": "Phase 1: Pre-IDO",
+        "phase1Desc": "You are here, Lowest Price.",
+        "phase2Title": "Phase 2: Raffle-IDO",
+        "phase2Desc": "Public Price Discovery",
+        "phase3Title": "Phase 3: WinSwap",
+        "phase3Desc": "Perpetual Growth Activated"
+    },
+    "getInEarly": {
+        "title": "Get In Early. Win From Day One.",
+        "description": "Enter the Pre-IDO phase to acquire WIN before the reserve grows and the price advances to its next level.",
+        "joinPreIDO": "Join Pre-IDO",
+        "learnMore": "Learn More"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Looking for more answers? Explore our full FAQ for detailed explanations.",
+        "viewFull": "View Full FAQ",
+        "q1": "What guarantees price growth?",
+        "a1": "The mathematical formula P = R/C ensures price growth as the reserve (R) increases and circulating supply (C) decreases with every transaction.",
+        "q2": "How is it possible that the WIN price in WinSwap doesn't drop?",
+        "a2": "WinSwap's bonding curve and burn mechanism ensure the price can only go up. Every transaction burns tokens while maintaining reserve stability.",
+        "q3": "What is the Raffle-IDO, and what can I win?",
+        "a3": "The Raffle-IDO is a fair price discovery mechanism where participants can win bonus WIN tokens and exclusive rewards.",
+        "q4": "What is the tokenomics of WIN?",
+        "a4": "WIN tokenomics is built on a deflationary model where every transaction burns a percentage of the supply, while maintaining a 100% USDT reserve backing.",
+        "q5": "When does the Pre-IDO end?",
+        "a5": "The Pre-IDO phase ends once the initial allocation is fully subscribed or when the countdown reaches zero, transitioning the protocol to the Raffle-IDO stage."
+    },
+    "footer": {
+        "copyright": "2022-2025 - AlwaysWin.",
+        "privacy": "Privacy Policy",
+        "risk": "Risk Disclaimer",
+        "terms": "Terms Of Service"
+    }
+}

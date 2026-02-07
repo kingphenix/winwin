@@ -1,0 +1,78 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "preIDO": "Pre-IDO",
+        "whitepaper": "Whitepaper",
+        "faq": "FAQ",
+        "connectWallet": "Wallet verbinden",
+        "backToHomepage": "Zurück zur Startseite"
+    },
+    "hero": {
+        "formula": "WIN-Preis = Gesamt-USDT in Reserve / Gesamt-WIN im Umlauf",
+        "buyingTitle": "Kaufen treibt den Preis nach oben",
+        "buyingDesc": "Jeder Kauf fügt USDT zur Reserve hinzu, um WIN zu prägen. Dank des deflationären Verbrennungsmechanismus wächst der Reservewert schneller als das neue Token-Angebot und zwingt den Preis mathematisch nach oben.",
+        "sellingTitle": "Verkaufen treibt den Preis ebenfalls in die Höhe",
+        "sellingDesc": "Verkäufe entfernen WIN dauerhaft aus dem Umlauf, während USDT aus der Reserve zurückgegeben wird. Die Reserve bleibt robust und das Angebot schrumpft, was einen Aufwärtsdruck auf den Preis erzeugt.",
+        "swappingTitle": "Swapping treibt ewiges Wachstum an",
+        "swappingDesc": "Nach dem Start verbrennt jeder Swap auf WinSwap einen kleinen % an WIN, verringert das Angebot und macht die verbleibenden Token wertvoller.",
+        "howItWorks": "Wie es funktioniert",
+        "detailed1_1": "AlwaysWin ist ein DeFi-Protokoll, das den Kryptowert auf vorhersehbare Weise wachsen lässt. ",
+        "detailed1_2": "Anstatt auf Hype oder Markt-Timing zu setzen, nutzt es unveränderliche On-Chain-Regeln, um den Mindestpreis von WIN bei jeder Transaktion stetig zu erhöhen.",
+        "detailed2_1": "WIN wird durch eine wachsende USDT-Reserve gestützt, und jede Interaktion mit dem Protokoll – durch Kaufen, Verkaufen oder die Nutzung von Ökosystem-Apps – verbrennt automatisch Token. ",
+        "detailed2_2": "Diese dauerhafte Reduktion des Angebots verbessert kontinuierlich das Reserve-Verhältnis und stellt sicher, dass jedes verbleibende WIN durch mehr USDT gedeckt ist, was den Mindestpreis mathematisch nach oben treibt.",
+        "detailed3_1": "Anstatt Nutzer gegeneinander auszuspielen, richtet AlwaysWin alle auf dasselbe Ergebnis aus: langfristiges Wertwachstum. ",
+        "detailed3_2": "Jede Aktion stärkt das System, und jeder Teilnehmer profitiert von seinem aufwärtsgerichteten Design."
+    },
+    "whyWorks": {
+        "title": "Warum AlwaysWin funktioniert",
+        "subtitle": "Basierend auf klarer Mathematik, transparenten Anreizen und einer Struktur, die darauf ausgelegt ist, den Wert für jeden Teilnehmer steigen zu lassen",
+        "priceUpTitle": "Preis, der nur steigt",
+        "priceUpDesc": "Der Wert von WIN steigt mathematisch mit jedem Kauf und jedem Verkauf. Ein ständig schrumpfendes Angebot und eine wachsende USDT-Reserve sorgen für nachhaltige Wertsteigerung.",
+        "backedTitle": "Vollständig gedeckt vom ersten Tag an",
+        "backedDesc": "Jeder WIN-Token ist immer durch echtes USDT gedeckt, das in der Reserve des Protokolls gespeichert ist. Keine Verwässerung, keine externen Liquiditätsanbieter, keine versteckten Kontrahentenrisiken.",
+        "alignedTitle": "Anreize mit Ihnen ausgerichtet",
+        "alignedDesc": "Wir richten Ihre Interessen mit denen aller anderen Marktteilnehmer aus. Wir verabschieden uns vom räuberischen 'Nullsummenspiel' (bei dem einer nur gewinnt, wenn ein anderer verliert)."
+    },
+    "valueGrowth": {
+        "title": "AlwaysWin lässt WIN durch Design an Wert gewinnen.",
+        "description": "Jeder Kauf, Verkauf oder App-Interaktion verbrennt etwas WIN, reduziert das Angebot, während die USDT-Reserve stark bleibt. Mit weniger Token und einer stabilen Reserve steigt der Preisboden automatisch weiter.",
+        "readMore": "Mehr erfahren"
+    },
+    "protocolJourney": {
+        "title": "Unsere Protokoll-Reise",
+        "subtitle": "Von früher Teilnahme bis zur vollständigen Ökosystem-Nützlichkeit stärkt jede Phase die Reserve und treibt den Preisboden höher.",
+        "phase1Title": "Phase 1: Pre-IDO",
+        "phase1Desc": "Sie sind hier, niedrigster Preis.",
+        "phase2Title": "Phase 2: Raffle-IDO",
+        "phase2Desc": "Öffentliche Preisfindung",
+        "phase3Title": "Phase 3: WinSwap",
+        "phase3Desc": "Ewiges Wachstum aktiviert"
+    },
+    "getInEarly": {
+        "title": "Früh einsteigen. Von Tag eins gewinnen.",
+        "description": "Treten Sie der Pre-IDO-Phase bei, um WIN zu erwerben, bevor die Reserve wächst und der Preis auf sein nächstes Niveau steigt.",
+        "joinPreIDO": "Pre-IDO beitreten",
+        "learnMore": "Mehr erfahren"
+    },
+    "faq": {
+        "title": "Häufig gestellte Fragen",
+        "subtitle": "Suchen Sie nach weiteren Antworten? Erkunden Sie unsere vollständige FAQ für detaillierte Erklärungen.",
+        "viewFull": "Vollständige FAQ anzeigen",
+        "q1": "Was garantiert Preiswachstum?",
+        "a1": "Die mathematische Formel P = R/C gewährleistet Preiswachstum, wenn die Reserve (R) zunimmt und das im Umlauf befindliche Angebot (C) mit jeder Transaktion abnimmt.",
+        "q2": "Wie ist es möglich, dass der WIN-Preis in WinSwap nicht sinkt?",
+        "a2": "Die Bonding-Kurve und der Verbrennungsmechanismus von WinSwap stellen sicher, dass der Preis nur steigen kann. Jede Transaktion verbrennt Token und erhält gleichzeitig die Stabilität der Reserve.",
+        "q3": "Was ist die Raffle-IDO und was kann ich gewinnen?",
+        "a3": "Die Raffle-IDO ist ein fairer Preisfindungsmechanismus, bei dem Teilnehmer Bonus-WIN-Token und exklusive Belohnungen gewinnen können.",
+        "q4": "Was ist die Tokenomics von WIN?",
+        "a4": "Die WIN-Tokenomics basiert auf einem deflationären Modell, bei dem jede Transaktion einen Prozentsatz des Angebots verbrennt und gleichzeitig eine 100%ige USDT-Reserveabdeckung beibehält.",
+        "q5": "Wann endet die Pre-IDO?",
+        "a5": "Die Pre-IDO-Phase endet, sobald das ursprüngliche Kontingent vollständig gezeichnet ist oder der Countdown Null erreicht."
+    },
+    "footer": {
+        "copyright": "2022-2025 - AlwaysWin.",
+        "privacy": "Datenschutzrichtlinie",
+        "risk": "Risikowarnung",
+        "terms": "Nutzungsbedingungen"
+    }
+}
