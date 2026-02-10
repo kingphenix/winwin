@@ -9,7 +9,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="relative z-10">
+    <div class="relative z-10 pt-20 sm:pt-24">
       <NavigationHeader />
       <div class="reveal">
         <HowItWorks />

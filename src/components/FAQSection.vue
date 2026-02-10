@@ -1,5 +1,10 @@
 <template>
   <section id="faq" class="relative bg-gray-50 py-24 overflow-hidden">
+    <!-- Background SVG Mask -->
+    <div class="absolute inset-0 pointer-events-none opacity-50">
+      <img src="/Mask group.svg" alt="" class="w-full h-full object-cover" />
+    </div>
+
     <!-- Background Glows -->
     <div class="absolute inset-0 pointer-events-none">
       <div class="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#23b672]/5 rounded-full blur-[120px] animate-blob"></div>
@@ -12,9 +17,19 @@
         <h2 class="text-4xl sm:text-6xl font-bold tracking-tight text-[#1c1a1a] mb-6">
           {{ $t('faq.title') }}
         </h2>
-        <p class="text-lg sm:text-2xl text-[#1c1a1a]/50 max-w-2xl mx-auto font-medium leading-relaxed">
+        <p class="text-lg sm:text-2xl text-[#1c1a1a]/50 max-w-2xl mx-auto font-medium leading-relaxed mb-10">
           {{ $t('faq.subtitle') }}
         </p>
+
+        <!-- View Full FAQ Button -->
+        <div class="flex justify-center mb-16">
+          <button class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#d93b4c] text-white text-lg font-bold px-10 py-5 rounded-full hover:bg-[#c43343] hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-red-500/30">
+            <span>{{ $t('faq.viewFull') }}</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- FAQ Items -->
@@ -45,16 +60,6 @@
             </transition>
           </div>
         </div>
-      </div>
-
-      <!-- View Full FAQ Button -->
-      <div class="text-center mt-12 reveal">
-        <button class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#d93b4c] text-white text-lg font-bold px-10 py-5 rounded-full hover:bg-[#c43343] hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-red-500/30">
-          <span>{{ $t('faq.viewFull') }}</span>
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-            <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
       </div>
     </div>
   </section>

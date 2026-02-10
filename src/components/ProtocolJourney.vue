@@ -13,7 +13,7 @@
         <h2 class="text-4xl sm:text-6xl md:text-[64px] font-bold tracking-tight text-[#1c1a1a] mb-8 leading-[1.05]">
           {{ $t('valueGrowth.title').split('WIN')[0] }}<span class="text-transparent bg-clip-text bg-[linear-gradient(90deg,#23B672_85.1%,#F0B90B_100%)] font-bold">WIN</span>{{ $t('valueGrowth.title').split('WIN')[1].split('design')[0] }}<span class="text-transparent bg-clip-text bg-[linear-gradient(90deg,#23B672_82.22%,#F6C744_100%)] font-bold">design</span>{{ $t('valueGrowth.title').split('design')[1] }}
         </h2>
-        <p class="text-lg sm:text-2xl text-[#1c1a1a]/60 max-w-4xl mb-10 leading-relaxed font-medium">
+        <p class="text-lg sm:text-xl text-[#1c1a1a] max-w-5xl mb-10 leading-relaxed font-medium">
             {{ $t('valueGrowth.description') }}
         </p>
         <button class="group px-10 py-5 rounded-full bg-gradient-to-r from-[#E54859] to-[#D43547] text-white text-lg font-bold flex items-center gap-3 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300">
@@ -26,53 +26,57 @@
 
       <!-- Protocol Journey Section -->
       <div class="relative">
-        <div class="reveal">
+        <div class="reveal px-6 md:px-0">
           <h3 class="text-3xl sm:text-5xl font-bold text-[#1c1a1a] mb-6 tracking-tight">
               {{ $t('protocolJourney.title') }}
           </h3>
-          <p class="text-lg sm:text-xl text-[#1c1a1a]/50 max-w-3xl mb-16 leading-relaxed font-medium">
+          <p class="text-lg sm:text-xl text-[#1c1a1a]/50 max-w-5xl mb-16 leading-relaxed font-medium">
               {{ $t('protocolJourney.subtitle') }}
           </p>
         </div>
 
         <!-- Visualization -->
-        <div class="relative w-full mt-12 mb-32 reveal">
-            <!-- Curve Image Group -->
-            <div class="relative w-full animate-pulse-soft opacity-40 md:opacity-100">
-                <!-- Spacer Image (Invisible, defines size) -->
-                <img src="/Vector 13.png" alt="" class="w-full h-auto opacity-0 pointer-events-none" />
-                
-                <!-- Gradient Mask Overlay -->
-                <div 
-                  class="absolute inset-0 w-full h-full bg-gradient-to-r from-[#ff6a00] via-[#FFE500] to-[#00FF3C]"
-                  style="-webkit-mask-image: url('/Vector 13.png'); mask-image: url('/Vector 13.png'); -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center;"
-                ></div>
+        <div class="relative w-full mt-12 mb-32">
+            <!-- Desktop Static Graph -->
+            <div class="hidden md:block relative w-full">
+                <img src="/Vector 13graphy.png" alt="Protocol Journey" class="w-full h-auto object-contain" />
+            </div>
+
+            <!-- Mobile Vector Line -->
+            <div class="md:hidden relative w-full mb-12">
+                <!-- Vectorline Image as Mask for Gradient -->
+                <div class="relative w-full h-32">
+                    <div 
+                        class="absolute inset-0 w-full h-full bg-[linear-gradient(90deg,#FF6A00_21.49%,#FFE600_36.88%,#FFE500_50.44%,#00FF3C_106.01%)]"
+                        style="-webkit-mask-image: url('/Vectorline.png'); mask-image: url('/Vectorline.png'); -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center;"
+                    ></div>
+                </div>
             </div>
             
             <!-- Cards Container -->
-            <div class="md:absolute inset-0 flex flex-col md:block gap-6 mt-8 md:mt-0">
+            <div class="hidden md:block absolute inset-0">
               <!-- Phase 1 Card -->
-               <div class="md:absolute left-[2%] md:bottom-[45%] bg-white border-2 border-[#ff6a00] p-6 rounded-2xl shadow-xl md:shadow-2xl w-full md:w-[280px] hover:-translate-y-2 transition-transform duration-300">
+               <div class="absolute left-[2%] bottom-[45%] bg-white border-2 border-[#ff6a00] p-6 rounded-2xl shadow-2xl w-[280px] hover:-translate-y-2 transition-transform duration-300">
                   <h4 class="text-[#ff6a00] font-bold text-xl mb-3">{{ $t('protocolJourney.phase1Title') }}</h4>
                   <p class="text-sm text-[#1c1a1a]/60 font-bold leading-relaxed">{{ $t('protocolJourney.phase1Desc') }}</p>
                </div>
 
                <!-- Phase 2 Card -->
-               <div class="md:absolute left-[35%] md:bottom-[65%] bg-white border-2 border-[#FFE500] p-6 rounded-2xl shadow-xl md:shadow-2xl w-full md:w-[280px] hover:-translate-y-2 transition-transform duration-300 animation-delay-200">
+               <div class="absolute left-[35%] bottom-[65%] bg-white border-2 border-[#FFE500] p-6 rounded-2xl shadow-2xl w-[280px] hover:-translate-y-2 transition-transform duration-300 animation-delay-200">
                   <h4 class="text-[#D4D753] font-bold text-xl mb-3">{{ $t('protocolJourney.phase2Title') }}</h4>
                   <p class="text-sm text-[#1c1a1a]/60 font-bold leading-relaxed">{{ $t('protocolJourney.phase2Desc') }}</p>
                </div>
 
                <!-- Phase 3 Card -->
-               <div class="md:absolute right-[2%] md:top-[5%] bg-white border-2 border-[#00FF3C] p-6 rounded-2xl shadow-xl md:shadow-2xl w-full md:w-[280px] hover:-translate-y-2 transition-transform duration-300 animation-delay-400">
+               <div class="absolute right-[2%] top-[5%] bg-white border-2 border-[#00FF3C] p-6 rounded-2xl shadow-2xl w-[280px] hover:-translate-y-2 transition-transform duration-300 animation-delay-400">
                   <h4 class="text-[#00FF3C] font-bold text-xl mb-3">{{ $t('protocolJourney.phase3Title') }}</h4>
                   <p class="text-sm text-[#1c1a1a]/60 font-bold leading-relaxed">{{ $t('protocolJourney.phase3Desc') }}</p>
                </div>
             </div>
         </div>
         
-        <!-- Mobile-specific spacing adjustment (removed duplicate stack) -->
-        <div class="md:hidden mb-20"></div>
+        <!-- Mobile-specific spacing adjustment -->
+        <div class="md:hidden mb-12"></div>
 
       </div>
 
@@ -86,7 +90,7 @@
                 <h2 class="text-4xl md:text-6xl font-bold tracking-tight text-[#1c1a1a] mb-8 leading-tight">
                     {{ $t('getInEarly.title').split('Win')[0] }}<span class="text-transparent bg-clip-text bg-[linear-gradient(90deg,#23B672_85.1%,#F0B90B_100%)] font-bold">Win</span>{{ $t('getInEarly.title').split('Win')[1] }}
                 </h2>
-                <p class="text-lg md:text-2xl text-[#1c1a1a]/50 max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
+                <p class="text-lg md:text-2xl text-[#1c1a1a] max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
                     {{ $t('getInEarly.description') }}
                 </p>
                 

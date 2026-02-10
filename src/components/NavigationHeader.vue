@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gradient-to-r from-[#a01a66] to-[#dc4039] h-20 sm:h-24 w-full flex items-center sticky top-0 z-50 shadow-lg">
+  <header class="bg-gradient-to-r from-[#a01a66] to-[#dc4039] h-20 sm:h-24 w-full flex items-center fixed top-0 z-50 shadow-lg">
     <nav class="max-w-6xl mx-auto w-full flex items-center justify-between px-4 sm:px-6">
       <!-- Logo -->
       <div class="flex items-center gap-1.5 sm:gap-2.5 flex-shrink-0">

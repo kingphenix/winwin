@@ -28,7 +28,7 @@
 
       <!-- Formula Indicator Box -->
       <div class="flex justify-center mb-16 reveal">
-        <div class="border-2 border-black rounded-xl py-5 px-10 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-300 bg-white">
+        <div class="border-4 border-black rounded-2xl py-5 px-10 shadow-sm transition-all duration-300 bg-white/50 backdrop-blur-sm">
           <p class="text-lg sm:text-xl font-bold text-[#1c1a1a] break-words">
             {{ $t('hero.formula') }} 
             <span class="text-[#23b672] ml-2">(P=R/C)</span>
@@ -37,14 +37,14 @@
       </div>
 
       <!-- Main Outer Container -->
-      <div class="space-y-12">
+      <div class="border-0 sm:border-4 border-black rounded-[32px] sm:rounded-[64px] p-0 sm:p-10 space-y-8 sm:space-y-12 bg-transparent sm:bg-white/50 backdrop-blur-none sm:backdrop-blur-sm shadow-none sm:shadow-sm">
         
         <!-- Card 1: Buying -->
         <div class="reveal">
-          <div class="bg-white border-2 border-black rounded-[24px] sm:rounded-[40px] p-6 sm:p-10 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all duration-500">
+          <div class="bg-white border-2 sm:border-4 border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
             <div 
               @click="openModal('/videos/Buy%20Scenario.mp4')"
-              class="group w-full h-[220px] sm:h-[400px] bg-gray-50 rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-8 relative overflow-hidden shadow-inner cursor-pointer"
+              class="group w-full bg-gray-50 rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-0 sm:border-2 border-black"
             >
               <video 
                 src="/videos/Buy%20Scenario.mp4" 
@@ -52,7 +52,7 @@
                 muted 
                 loop 
                 playsinline 
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                class="w-full h-auto block transition-transform duration-700 group-hover:scale-110"
               ></video>
               <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                 <div class="w-20 h-20 rounded-full bg-white/30 backdrop-blur-md border border-white/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-500">
@@ -62,8 +62,8 @@
                 </div>
               </div>
             </div>
-            <h3 class="text-3xl sm:text-[40px] leading-[110%] font-bold tracking-tight text-[#1c1a1a] mb-5 break-words">{{ $t('hero.buyingTitle') }}</h3>
-            <p class="text-lg sm:text-[20px] leading-[1.6] font-medium text-gray-500 max-w-5xl break-words">
+            <h3 class="text-[26px] sm:text-[40px] leading-[110%] font-bold tracking-tight text-[#1c1a1a] mb-3 break-words">{{ $t('hero.buyingTitle') }}</h3>
+            <p class="text-[15px] sm:text-[20px] leading-[1.5] font-medium text-black/60 max-w-5xl break-words">
               {{ $t('hero.buyingDesc') }}
             </p>
           </div>
@@ -71,10 +71,10 @@
 
         <!-- Card 2: Selling -->
         <div class="reveal">
-          <div class="bg-white border-2 border-black rounded-[24px] sm:rounded-[40px] p-6 sm:p-10 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all duration-500">
+          <div class="bg-white border-2 sm:border-4 border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
             <div 
               @click="openModal('/videos/Sell%20scenario.mp4')"
-              class="group w-full h-[220px] sm:h-[400px] bg-gray-50 rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-8 relative overflow-hidden shadow-inner cursor-pointer"
+              class="group w-full bg-gray-50 rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-0 sm:border-2 border-black"
             >
               <video 
                 src="/videos/Sell%20scenario.mp4" 
@@ -82,7 +82,7 @@
                 muted 
                 loop 
                 playsinline 
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                class="w-full h-auto block transition-transform duration-700 group-hover:scale-110"
               ></video>
               <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                 <div class="w-20 h-20 rounded-full bg-white/30 backdrop-blur-md border border-white/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-500">
@@ -92,8 +92,8 @@
                 </div>
               </div>
             </div>
-            <h3 class="text-3xl sm:text-[40px] leading-[110%] font-bold tracking-tight text-[#1c1a1a] mb-5 break-words">{{ $t('hero.sellingTitle') }}</h3>
-            <p class="text-lg sm:text-[20px] leading-[1.6] font-medium text-gray-500 max-w-5xl break-words">
+            <h3 class="text-[26px] sm:text-[40px] leading-[110%] font-bold tracking-tight text-[#1c1a1a] mb-3 break-words">{{ $t('hero.sellingTitle') }}</h3>
+            <p class="text-[15px] sm:text-[20px] leading-[1.5] font-medium text-black/60 max-w-5xl break-words">
               {{ $t('hero.sellingDesc') }}
             </p>
           </div>
@@ -101,41 +101,71 @@
 
         <!-- Card 3: USDT Support -->
         <div class="reveal">
-          <div class="bg-[#f9fafb] border-2 border-black rounded-[24px] sm:rounded-[40px] p-6 sm:p-10 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] flex flex-col md:flex-row items-center gap-10">
-            <div class="w-full md:w-[260px] h-[220px] flex items-center justify-center flex-shrink-0 animate-float bg-white rounded-3xl border-2 border-black p-6">
+          <div class="bg-white border-2 sm:border-4 border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 flex flex-col md:flex-row items-center gap-10 hover:border-gray-200 transition-all duration-500">
+            <div class="w-full md:w-[260px] h-[220px] flex items-center justify-center flex-shrink-0 animate-float bg-gray-50 rounded-3xl border-0 sm:border-4 border-black p-6">
               <img src="/Frame 11Usdt.png" alt="USDT Supported" class="w-full h-auto max-h-full object-contain" />
             </div>
             <div class="flex-1">
-              <h3 class="text-3xl sm:text-[40px] leading-[110%] font-bold tracking-tight text-[#1c1a1a] mb-5 break-words">{{ $t('hero.swappingTitle') }}</h3>
-              <p class="text-lg sm:text-[20px] leading-[1.6] font-medium text-gray-500 break-words">
+              <h3 class="text-[26px] sm:text-[40px] leading-[110%] font-bold tracking-tight text-[#1c1a1a] mb-3 break-words">{{ $t('hero.swappingTitle') }}</h3>
+              <p class="text-[15px] sm:text-[20px] leading-[1.5] font-medium text-black/60 break-words">
                 {{ $t('hero.swappingDesc') }}
               </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Detailed Text Section -->
-        <div class="mt-20 space-y-16">
-          <div class="reveal">
-            <p class="text-3xl sm:text-[52px] leading-tight font-bold tracking-tight">
-              <span class="text-[#1c1a1a]">{{ $t('hero.detailed1_1') }}</span>
-              <span class="text-[#1c1a1a]/40">{{ $t('hero.detailed1_2') }}</span>
-            </p>
-          </div>
-          <div class="reveal">
-            <p class="text-3xl sm:text-[52px] leading-tight font-bold tracking-tight">
-              <span class="text-[#1c1a1a]">{{ $t('hero.detailed2_1') }}</span>
-              <span class="text-[#1c1a1a]/40">{{ $t('hero.detailed2_2') }}</span>
-            </p>
-          </div>
-          <div class="reveal">
-            <p class="text-3xl sm:text-[52px] leading-tight font-bold tracking-tight">
-              <span class="text-[#1c1a1a]">{{ $t('hero.detailed3_1') }}</span>
-              <span class="text-[#1c1a1a]/40">{{ $t('hero.detailed3_2') }}</span>
-            </p>
-          </div>
+      <!-- Detailed Text Section -->
+      <div class="mt-20 space-y-12 sm:space-y-16">
+        <div class="reveal">
+          <p class="text-xl sm:text-[32px] leading-tight font-bold tracking-tight">
+            <span class="text-[#1c1a1a]">{{ $t('hero.detailed1_1') }}</span>
+            <span class="text-[#1c1a1a]/40">{{ $t('hero.detailed1_2') }}</span>
+          </p>
         </div>
-
+        <div class="reveal">
+          <p class="text-xl sm:text-[32px] leading-tight font-bold tracking-tight">
+            <span class="text-[#1c1a1a]">{{ $t('hero.detailed2_1') }}</span>
+            <span class="text-[#1c1a1a]/40">
+              <template v-if="!isExpanded">
+                <span class="sm:hidden">
+                  {{ $t('hero.detailed2_2').substring(0, 14) }}
+                  <button 
+                    @click="isExpanded = true"
+                    class="inline-flex items-center gap-0.5 text-[#23B672] font-bold ml-1 hover:opacity-80 transition-opacity"
+                  >
+                    See more
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M19 9l-7 7-7-7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </span>
+                <span class="hidden sm:inline">{{ $t('hero.detailed2_2') }}</span>
+              </template>
+              <template v-else>
+                {{ $t('hero.detailed2_2') }}
+              </template>
+            </span>
+          </p>
+        </div>
+        <div class="reveal" :class="{ 'hidden sm:block': !isExpanded }">
+          <p class="text-xl sm:text-[32px] leading-tight font-bold tracking-tight">
+            <span class="text-[#1c1a1a]">{{ $t('hero.detailed3_1') }}</span>
+            <span class="text-[#1c1a1a]/40">
+              {{ $t('hero.detailed3_2') }}
+              <button 
+                v-if="isExpanded"
+                @click="isExpanded = false"
+                class="sm:hidden inline-flex items-center gap-0.5 text-[#23B672] font-bold ml-1 hover:opacity-80 transition-opacity"
+              >
+                Show less
+                <svg class="w-4 h-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M19 9l-7 7-7-7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </span>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -184,6 +214,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const isModalOpen = ref(false)
+const isExpanded = ref(false)
 const activeVideoSrc = ref('')
 
 const openModal = (src) => {
