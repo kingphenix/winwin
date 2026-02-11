@@ -16,9 +16,9 @@
         <p class="text-lg sm:text-xl text-[#1c1a1a] max-w-5xl mb-10 leading-relaxed font-medium">
             {{ $t('valueGrowth.description') }}
         </p>
-        <button class="group px-10 py-5 rounded-full bg-gradient-to-r from-[#E54859] to-[#D43547] text-white text-lg font-bold flex items-center gap-3 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300">
+        <button class="group w-[45%] sm:w-auto px-6 py-3.5 sm:px-10 sm:py-5 rounded-full bg-gradient-to-r from-[#E54859] to-[#D43547] text-white text-[14px] sm:text-lg font-bold flex items-center justify-center gap-2 sm:gap-3 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300">
           {{ $t('valueGrowth.readMore') }}
-          <svg class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" viewBox="0 0 12 12" fill="none">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" viewBox="0 0 12 12" fill="none">
             <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
@@ -84,26 +84,26 @@
     </div>
 
     <!-- CTA Section -->
-    <div class="w-full bg-[#23B672] py-24 mt-20 reveal">
+    <div class="w-full bg-[#23B672] py-16 sm:py-24 mt-20 reveal">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="bg-white rounded-[40px] px-8 py-16 md:p-24 text-center shadow-[20px_20px_0px_0px_rgba(0,0,0,0.1)] border-2 border-black/5">
-                <h2 class="text-4xl md:text-6xl font-bold tracking-tight text-[#1c1a1a] mb-8 leading-tight">
-                    {{ $t('getInEarly.title').split('Win')[0] }}<span class="text-transparent bg-clip-text bg-[linear-gradient(90deg,#23B672_85.1%,#F0B90B_100%)] font-bold">Win</span>{{ $t('getInEarly.title').split('Win')[1] }}
+            <div class="bg-white rounded-[40px] px-6 py-12 sm:px-8 sm:py-16 md:p-24 text-center shadow-none sm:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.1)] border-0 sm:border-2 border-black/5">
+                <h2 class="text-[28px] sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#1c1a1a] mb-6 sm:mb-8 leading-tight">
+                    {{ $t('getInEarly.title').split('Win')[0] }}<span class="text-[#23B672] sm:text-transparent sm:bg-clip-text sm:bg-[linear-gradient(90deg,#23B672_85.1%,#F0B90B_100%)] font-bold">Win</span>{{ $t('getInEarly.title').split('Win')[1] }}
                 </h2>
-                <p class="text-lg md:text-2xl text-[#1c1a1a] max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
+                <p class="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] text-[#1c1a1a] max-w-4xl mx-auto mb-10 sm:mb-12 leading-relaxed font-medium">
                     {{ $t('getInEarly.description') }}
                 </p>
                 
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <button class="w-full sm:w-auto px-10 py-5 rounded-full bg-gradient-to-r from-[#E54859] to-[#D43547] text-white text-lg font-bold flex items-center justify-center gap-3 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300">
-                        {{ $t('getInEarly.joinPreIDO') }}
-                        <svg class="w-4 h-4" viewBox="0 0 12 12" fill="none">
+                <div class="flex flex-row items-center justify-center gap-3 sm:gap-6">
+                    <button class="w-[38%] sm:flex-none px-2 py-3 sm:px-10 sm:py-5 rounded-full bg-[#E54859] text-white text-[12px] sm:text-lg font-bold flex items-center justify-center gap-1.5 sm:gap-3 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300">
+                        <span class="whitespace-nowrap">{{ $t('getInEarly.joinPreIDO') }}</span>
+                        <svg class="w-2.5 h-2.5 sm:w-4 sm:h-4" viewBox="0 0 12 12" fill="none">
                             <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <button class="w-full sm:w-auto px-10 py-5 rounded-full bg-white border-2 border-[#1c1a1a] text-[#1c1a1a] text-lg font-bold flex items-center justify-center gap-3 hover:bg-black/5 hover:scale-105 active:scale-95 transition-all duration-300">
-                        {{ $t('getInEarly.learnMore') }}
-                        <svg class="w-4 h-4" viewBox="0 0 12 12" fill="none">
+                    <button class="w-[38%] sm:flex-none px-2 py-3 sm:px-10 sm:py-5 rounded-full bg-white border border-[#1c1a1a] text-[#1c1a1a] text-[12px] sm:text-lg font-bold flex items-center justify-center gap-1.5 sm:gap-3 hover:bg-black/5 hover:scale-105 active:scale-95 transition-all duration-300">
+                        <span class="whitespace-nowrap">{{ $t('getInEarly.learnMore') }}</span>
+                        <svg class="w-2.5 h-2.5 sm:w-4 sm:h-4" viewBox="0 0 12 12" fill="none">
                             <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
