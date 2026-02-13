@@ -13,7 +13,7 @@
         <h2 class="text-4xl sm:text-6xl md:text-[64px] font-bold tracking-tight text-[#1c1a1a] mb-8 leading-[1.05]">
           {{ $t('valueGrowth.title').split('WIN')[0] }}<span class="text-transparent bg-clip-text bg-[linear-gradient(90deg,#23B672_85.1%,#F0B90B_100%)] font-bold">WIN</span>{{ $t('valueGrowth.title').split('WIN')[1].split('design')[0] }}<span class="text-transparent bg-clip-text bg-[linear-gradient(90deg,#23B672_82.22%,#F6C744_100%)] font-bold">design</span>{{ $t('valueGrowth.title').split('design')[1] }}
         </h2>
-        <p class="text-lg sm:text-xl text-[#1c1a1a] max-w-5xl mb-10 leading-relaxed font-medium">
+        <p class="text-[15px] sm:text-xl text-[#1c1a1a] max-w-5xl mb-10 leading-relaxed font-medium">
             {{ $t('valueGrowth.description') }}
         </p>
         <button class="group w-[45%] sm:w-auto px-6 py-3.5 sm:px-10 sm:py-5 rounded-full bg-gradient-to-r from-[#E54859] to-[#D43547] text-white text-[14px] sm:text-lg font-bold flex items-center justify-center gap-2 sm:gap-3 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300">
@@ -30,27 +30,28 @@
           <h3 class="text-3xl sm:text-5xl font-bold text-[#1c1a1a] mb-6 tracking-tight">
               {{ $t('protocolJourney.title') }}
           </h3>
-          <p class="text-lg sm:text-xl text-[#1c1a1a]/50 max-w-5xl mb-16 leading-relaxed font-medium">
+          <p class="hidden md:block text-lg sm:text-xl text-[#1c1a1a]/50 max-w-5xl mb-16 leading-relaxed font-medium">
               {{ $t('protocolJourney.subtitle') }}
           </p>
         </div>
 
         <!-- Visualization -->
-        <div class="relative w-full mt-12 mb-32">
+        <div class="relative w-full mt-4 md:mt-12 mb-32">
             <!-- Desktop Static Graph -->
             <div class="hidden md:block relative w-full">
                 <img src="/Vector 13graphy.png" alt="Protocol Journey" class="w-full h-auto object-contain" />
             </div>
 
-            <!-- Mobile Vector Line -->
-            <div class="md:hidden relative w-full mb-12">
-                <!-- Vectorline Image as Mask for Gradient -->
-                <div class="relative w-full h-32">
-                    <div 
-                        class="absolute inset-0 w-full h-full bg-[linear-gradient(90deg,#FF6A00_21.49%,#FFE600_36.88%,#FFE500_50.44%,#00FF3C_106.01%)]"
-                        style="-webkit-mask-image: url('/Vectorline.png'); mask-image: url('/Vectorline.png'); -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center;"
-                    ></div>
-                </div>
+            <!-- Mobile Protocol Journey Video -->
+            <div class="md:hidden relative w-full mb-12 overflow-hidden">
+                <video 
+                    src="/videos/GraphVid.mp4" 
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline 
+                    class="w-full h-auto object-contain scale-y-[1.02] origin-bottom"
+                ></video>
             </div>
             
             <!-- Cards Container -->

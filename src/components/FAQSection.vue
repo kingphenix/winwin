@@ -12,7 +12,7 @@
         <h2 class="text-4xl sm:text-6xl font-bold tracking-tight text-[#1c1a1a] mb-6">
           {{ $t('faq.title') }}
         </h2>
-        <p class="text-lg sm:text-2xl text-[#1c1a1a]/50 max-w-2xl mx-auto font-medium leading-relaxed mb-10">
+        <p class="text-lg sm:text-2xl text-[#1c1a1a] max-w-2xl mx-auto font-medium leading-relaxed mb-10">
           {{ $t('faq.subtitle') }}
         </p>
 

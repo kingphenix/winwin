@@ -28,7 +28,7 @@
 
       <!-- Formula Indicator Box -->
       <div class="flex justify-center mb-16 reveal">
-        <div class="border-4 border-black rounded-2xl py-5 px-10 shadow-sm transition-all duration-300 bg-white/50 backdrop-blur-sm">
+        <div class="border-[3px] border-black rounded-2xl py-5 px-10 shadow-sm transition-all duration-300 bg-white/50 backdrop-blur-sm">
           <p class="text-lg sm:text-xl font-bold text-[#1c1a1a] break-words">
             {{ $t('hero.formula') }} 
             <span class="text-[#23b672] ml-2">(P=R/C)</span>
@@ -37,14 +37,14 @@
       </div>
 
       <!-- Main Outer Container -->
-      <div class="border-0 sm:border-4 border-black rounded-[32px] sm:rounded-[64px] p-0 sm:p-10 space-y-8 sm:space-y-12 bg-transparent sm:bg-white/50 backdrop-blur-none sm:backdrop-blur-sm shadow-none sm:shadow-sm">
+      <div class="border-0 sm:border-[3px] border-black rounded-[32px] sm:rounded-[64px] p-0 sm:p-10 space-y-8 sm:space-y-12 bg-transparent sm:bg-white/50 backdrop-blur-none sm:backdrop-blur-sm shadow-none sm:shadow-sm">
         
         <!-- Card 1: Buying -->
         <div class="reveal">
-          <div class="bg-white border-2 sm:border-4 border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
+          <div class="bg-white border sm:border-[3px] border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
             <div 
               @click="openModal('/videos/Buy%20Scenario.mp4')"
-              class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-0 sm:border-2 border-black"
+              class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
             >
               <video 
                 src="/videos/Buy%20Scenario.mp4" 
@@ -52,7 +52,7 @@
                 muted 
                 loop 
                 playsinline 
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                class="w-full h-full object-cover transition-transform duration-700 scale-[1.03] group-hover:scale-110"
               ></video>
               <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                 <div class="w-20 h-20 rounded-full bg-white/30 backdrop-blur-md border border-white/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-500">
@@ -71,10 +71,10 @@
 
         <!-- Card 2: Selling -->
         <div class="reveal">
-          <div class="bg-white border-2 sm:border-4 border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
+          <div class="bg-white border sm:border-[3px] border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
             <div 
               @click="openModal('/videos/Sell%20scenario.mp4')"
-              class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-0 sm:border-2 border-black"
+              class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
             >
               <video 
                 src="/videos/Sell%20scenario.mp4" 
@@ -82,7 +82,7 @@
                 muted 
                 loop 
                 playsinline 
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                class="w-full h-full object-cover transition-transform duration-700 scale-[1.03] group-hover:scale-110"
               ></video>
               <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                 <div class="w-20 h-20 rounded-full bg-white/30 backdrop-blur-md border border-white/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-500">
@@ -101,8 +101,8 @@
 
         <!-- Card 3: USDT Support -->
         <div class="reveal">
-          <div class="bg-white border-2 sm:border-4 border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 flex flex-col md:flex-row items-center gap-10 hover:border-gray-200 transition-all duration-500">
-            <div class="w-full md:w-[260px] h-[220px] flex items-center justify-center flex-shrink-0 animate-float bg-gray-50 rounded-3xl border-0 sm:border-4 border-black overflow-hidden">
+          <div class="bg-white border sm:border-[3px] border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 flex flex-col md:flex-row items-center gap-10 hover:border-gray-200 transition-all duration-500">
+            <div class="w-full md:w-[260px] h-[220px] flex items-center justify-center flex-shrink-0 animate-float bg-gray-50 rounded-3xl border-0 sm:border-[3px] border-black overflow-hidden">
               <img src="/Frame 11Usdt.png" alt="USDT Supported" class="w-full h-full object-cover" />
             </div>
             <div class="flex-1">
