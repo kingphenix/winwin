@@ -26,58 +26,26 @@
 
       <!-- Protocol Journey Section -->
       <div class="relative">
-        <div class="reveal px-6 md:px-0">
+        <div class="reveal">
           <h3 class="text-3xl sm:text-5xl font-bold text-[#1c1a1a] mb-6 tracking-tight">
               {{ $t('protocolJourney.title') }}
           </h3>
-          <p class="hidden md:block text-lg sm:text-xl text-[#1c1a1a]/50 max-w-5xl mb-16 leading-relaxed font-medium">
+          <p class="text-[15px] sm:text-xl text-[#1c1a1a] max-w-5xl mb-8 md:mb-16 leading-relaxed font-medium">
               {{ $t('protocolJourney.subtitle') }}
           </p>
         </div>
 
         <!-- Visualization -->
-        <div class="relative w-full mt-4 md:mt-12 mb-32">
-            <!-- Desktop Static Graph -->
-            <div class="hidden md:block relative w-full">
-                <img src="/Vector 13graphy.png" alt="Protocol Journey" class="w-full h-auto object-contain" />
-            </div>
-
-            <!-- Mobile Protocol Journey Video -->
-            <div class="md:hidden relative w-full mb-12 overflow-hidden">
-                <video 
-                    src="/videos/GraphVid.mp4" 
-                    autoplay 
-                    muted 
-                    loop 
-                    playsinline 
-                    class="w-full h-auto object-contain scale-y-[1.02] origin-bottom"
-                ></video>
-            </div>
-            
-            <!-- Cards Container -->
-            <div class="hidden md:block absolute inset-0">
-              <!-- Phase 1 Card -->
-               <div class="absolute left-[2%] bottom-[45%] bg-white border-2 border-[#ff6a00] p-6 rounded-2xl shadow-2xl w-[280px] hover:-translate-y-2 transition-transform duration-300">
-                  <h4 class="text-[#ff6a00] font-bold text-xl mb-3">{{ $t('protocolJourney.phase1Title') }}</h4>
-                  <p class="text-sm text-[#1c1a1a]/60 font-bold leading-relaxed">{{ $t('protocolJourney.phase1Desc') }}</p>
-               </div>
-
-               <!-- Phase 2 Card -->
-               <div class="absolute left-[35%] bottom-[65%] bg-white border-2 border-[#FFE500] p-6 rounded-2xl shadow-2xl w-[280px] hover:-translate-y-2 transition-transform duration-300 animation-delay-200">
-                  <h4 class="text-[#D4D753] font-bold text-xl mb-3">{{ $t('protocolJourney.phase2Title') }}</h4>
-                  <p class="text-sm text-[#1c1a1a]/60 font-bold leading-relaxed">{{ $t('protocolJourney.phase2Desc') }}</p>
-               </div>
-
-               <!-- Phase 3 Card -->
-               <div class="absolute right-[2%] top-[5%] bg-white border-2 border-[#00FF3C] p-6 rounded-2xl shadow-2xl w-[280px] hover:-translate-y-2 transition-transform duration-300 animation-delay-400">
-                  <h4 class="text-[#00FF3C] font-bold text-xl mb-3">{{ $t('protocolJourney.phase3Title') }}</h4>
-                  <p class="text-sm text-[#1c1a1a]/60 font-bold leading-relaxed">{{ $t('protocolJourney.phase3Desc') }}</p>
-               </div>
-            </div>
+        <div class="relative w-screen left-1/2 -translate-x-1/2 mt-4 md:mt-12 mb-0 overflow-hidden">
+             <video 
+                 src="/videos/main_3.mp4" 
+                 autoplay 
+                 muted 
+                 loop 
+                 playsinline 
+                 class="w-full h-auto object-contain scale-y-[1.01] origin-top translate-y-[2%]"
+             ></video>
         </div>
-        
-        <!-- Mobile-specific spacing adjustment -->
-        <div class="md:hidden mb-12"></div>
 
       </div>
 
@@ -85,7 +53,7 @@
     </div>
 
     <!-- CTA Section -->
-    <div class="w-full bg-[#23B672] py-16 sm:py-24 mt-20 reveal">
+    <div class="w-full bg-[#23B672] py-16 sm:py-24 mt-0 reveal">
         <div class="max-w-5xl mx-auto px-6">
             <div class="bg-white rounded-[40px] px-6 py-12 sm:px-8 sm:py-16 md:p-24 text-center shadow-none sm:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.1)] border-0 sm:border-2 border-black/5">
                 <h2 class="text-[28px] sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#1c1a1a] mb-6 sm:mb-8 leading-tight">
@@ -115,5 +83,4 @@
   </section>
 </template>
 
-<script setup>
-</script>
+
