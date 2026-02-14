@@ -36,9 +36,10 @@
         </div>
 
         <!-- Visualization -->
-        <div class="relative w-screen left-1/2 -translate-x-1/2 mt-4 md:mt-12 mb-0 overflow-hidden">
+        <div class="relative w-screen left-1/2 -translate-x-1/2 mt-4 md:mt-12 mb-0 overflow-hidden pointer-events-none">
              <video 
                  src="/videos/main_3.mp4" 
+                 poster="/Vector 13graphy.png" 
                  autoplay 
                  muted 
                  loop 
