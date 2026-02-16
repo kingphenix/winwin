@@ -5,9 +5,23 @@ const videoRef = ref<HTMLVideoElement | null>(null);
 
 onMounted(() => {
     if (videoRef.value) {
-        videoRef.value.play().catch(error => {
-            console.log("Autoplay prevented:", error);
-        });
+        // Explicitly set properties for better mobile support
+        videoRef.value.muted = true;
+        videoRef.value.playsInline = true;
+        videoRef.value.setAttribute('playsinline', '');
+        videoRef.value.setAttribute('webkit-playsinline', '');
+        
+        const playPromise = videoRef.value.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                console.log("Autoplay prevented:", error);
+                // Force mute and try again if failed
+                if (videoRef.value) {
+                    videoRef.value.muted = true;
+                    videoRef.value.play().catch(e => console.log("Retry failed:", e));
+                }
+            });
+        }
     }
 });
 </script>
@@ -53,13 +67,14 @@ onMounted(() => {
         <div class="relative w-full my-12 sm:-mt-16 sm:mb-48 overflow-hidden pointer-events-none">
                  <video 
                      ref="videoRef"
-                     src="/videos/final_marcel.mp4" 
+                     src="/videos/FinalGraph.mp4" 
                      poster="/protocol_journey_poster.png" 
                      autoplay 
                      muted 
                      loop 
                      playsinline 
                      webkit-playsinline
+                     preload="auto"
                      class="w-full h-auto object-contain scale-y-[1.01] origin-top translate-y-[2%]"
                  ></video>
         </div>
