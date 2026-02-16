@@ -53,7 +53,7 @@
               leave-from-class="max-h-[500px] opacity-100"
               leave-to-class="max-h-0 opacity-0"
             >
-              <div v-if="faq.open" class="px-5 pb-5 sm:px-8 sm:pb-8 text-white/90 text-[12.91px] sm:text-lg leading-relaxed font-light border-t border-white/10 pt-4 sm:pt-0 sm:border-t-0" v-html="faq.answer"></div>
+              <div v-if="faq.open" class="px-5 pb-5 sm:px-8 sm:pb-8 text-white/90 text-[12.91px] sm:text-lg leading-relaxed font-light" v-html="faq.answer"></div>
             </transition>
           </div>
         </div>
