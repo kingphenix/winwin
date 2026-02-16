@@ -59,15 +59,15 @@
         "subtitle": "寻找更多答案?浏览我们的完整常见问题以获取详细说明。",
         "viewFull": "查看完整常见问题",
         "q1": "什么保证价格增长?",
-        "a1": "数学公式 P = R/C 确保价格增长,因为储备 (R) 增加而流通供应 (C) 随每笔交易减少。",
+        "a1": "WIN 是 AlwaysWin 生态系统的原生代币，专为持续的价值增长而设计。由管理 <span class=\"font-bold text-[#1c1a1a]\">WinSwap</span> 协议和生态系统整体设计的不可变智能合约规则保证其价格下限不断上升。获取和分享 WIN 是您<span class=\"font-bold text-[#1c1a1a]\">获取生态系统增长红利</span>、通过 <span class=\"font-bold text-[#1c1a1a]\">Windora</span> 抽奖赚钱以及获得<span class=\"font-bold text-[#1c1a1a]\">未来质押奖励</span>的关键。",
         "q2": "WinSwap 中的 WIN 价格怎么可能不下跌?",
-        "a2": "WinSwap 的绑定曲线和燃烧机制确保价格只能上涨。每笔交易都会燃烧代币,同时保持储备稳定性。",
+        "a2": "不，恰恰相反。这一行动不会降低价格；实际上会导致价格上涨。<br><br>遵循我们的“数字金本位”模式，只有当等值的 USDT 存入协议储备时，才会铸造新的 WIN 代币，确保每个新代币从创建之初就得到完全支持。仅此支持就能保持价格稳定。然而，该协议更进一步：WinSwap 上的每笔交易都要销毁高达 0.35% 的代币。当您购买（铸造）WIN 时，您收到的一部分 WIN 会立即被销毁。这一行动从数学上保证了价格上涨，使得整个系统本身具有增值性。",
         "q3": "什么是抽奖 IDO,我能赢什么?",
-        "a3": "抽奖 IDO 是一种公平的价格发现机制,参与者可以赢得奖励 WIN 代币和独家奖励。",
-        "q4": "WIN 的代币经济学是什么？",
-        "a4": "WIN 代币经济学建立在通缩模型之上，每笔交易都会销毁一定比例的供应量，同时保持 100% 的 USDT 储备支持。",
-        "q5": "预售什么时候结束？",
-        "a5": "一旦初始额度被完全认购或倒计时归零，预售阶段就会结束。"
+        "a3": "<p class=\"mb-4\">Raffle-IDO 是我们的主要公开发布活动，这是一个完全由智能合约控制的保证中奖的抽奖活动。每个参与者都保证获得价值超过其 USDT 存款的奖品。</p><div class=\"space-y-3\"><p><span class=\"font-bold text-[#1c1a1a]\">活动分配：</span> 117,000,000 WIN。</p><p><span class=\"font-bold text-[#1c1a1a]\">关键作用：</span> 它最终确定了 Pre-IDO 的价格发现，并设定了 WIN 在 WinSwap 上的初始交易价格。</p><div class=\"mt-4\"><p class=\"font-bold text-[#1c1a1a] mb-2\">奖品（由合约决定）：</p><ol class=\"list-decimal pl-5 space-y-2\"><li><span class=\"font-bold text-[#1c1a1a]\">WIN 奖品：</span> 价值您存款 130%-275% 的 WIN 代币。</li><li><span class=\"font-bold text-[#1c1a1a]\">USDT 奖品：</span> 您存款的 101%-130%。</li></ol></div></div>",
+        "q4": "什么 是 Windora？",
+        "a4": "<p class=\"mb-4\">Windora 是 AlwaysWin 协议的官方 DApp 启动板，也是用户赚取 WIN 的竞争竞技场。作为一个启动板，它托管了社区构建的精选高质量抽奖和策略 DApp，这丰富了协议的生态系统并赋予了开发者权力。更重要的是，Windora 作为一个长期竞技场，让用户可以通过多种途径赚取奖励，例如赢得游戏或分享以赚取链上佣金。</p><p>至关重要的是，Windora 上的每个 DApp 都集成了一个独特的<span class=\"font-bold text-[#1c1a1a]\">代币销毁机制</span>。这确保了所有的游戏玩法和参与都直接有助于 WIN 代币的长期价值增长，创造一个强大的、自我维持的经济体，让每个人都受益。</p>",
+        "q5": "Pre-IDO 什么时候结束？",
+        "a5": "Pre-IDO 没有固定的结束日期。一旦达到 80% 的销售硬顶，该活动将最终结束。"
     },
     "footer": {
         "copyright": "2022-2025 - AlwaysWin.",

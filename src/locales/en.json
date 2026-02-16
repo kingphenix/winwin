@@ -55,19 +55,19 @@
         "learnMore": "Learn More"
     },
     "faq": {
-        "title": "Frequently Asked Questions",
+        "title": "Frequently Asked <span class=\"text-[#23b672]\">Questions</span>",
         "subtitle": "Looking for more answers? Explore our full FAQ for detailed explanations.",
         "viewFull": "View Full FAQ",
-        "q1": "What guarantees price growth?",
-        "a1": "The mathematical formula P = R/C ensures price growth as the reserve (R) increases and circulating supply (C) decreases with every transaction.",
-        "q2": "How is it possible that the WIN price in WinSwap doesn't drop?",
-        "a2": "WinSwap's bonding curve and burn mechanism ensure the price can only go up. Every transaction burns tokens while maintaining reserve stability.",
+        "q1": "What is the WIN token",
+        "a1": "WIN is the native token of the AlwaysWin ecosystem, engineered for sustained value growth. Its continuously rising price floor is guaranteed by the immutable smart contract rules that govern the <span class=\"font-bold text-[#1c1a1a]\">WinSwap</span> protocol and the ecosystem's holistic design. Acquiring and sharing WIN is your key to <span class=\"font-bold text-[#1c1a1a]\">capturing the ecosystem's growth dividends</span>, earning through <span class=\"font-bold text-[#1c1a1a]\">Windora's</span> raffles, and receiving <span class=\"font-bold text-[#1c1a1a]\">future staking rewards</span>.",
+        "q2": "Will Minting new WIN on WINSWAP lower the price",
+        "a2": "No, quite the opposite. This action will not lower the price; it will actually cause it to increase.<br><br>Following our 'Digital Gold Standard' model, new WIN tokens are only minted when an equivalent value of USDT is deposited into the protocol's reserve, ensuring every new token is fully backed from its creation. This backing alone would keep the price stable. However, the protocol goes one step further: every transaction on WinSwap is subject to a token burn of up to 0.35%. When you buy (mint) WIN, a portion of the WIN you receive is instantly burned. This action mathematically guarantees a price increase, making the entire system inherently appreciative.",
         "q3": "What is the Raffle-IDO, and what can I win?",
-        "a3": "The Raffle-IDO is a fair price discovery mechanism where participants can win bonus WIN tokens and exclusive rewards.",
-        "q4": "What is the tokenomics of WIN?",
-        "a4": "WIN tokenomics is built on a deflationary model where every transaction burns a percentage of the supply, while maintaining a 100% USDT reserve backing.",
+        "a3": "<p class=\"mb-4\">Raffle-IDO is our main public launch, a guaranteed-win raffle fully controlled by smart contracts. Every participant is assured a prize worth more than their USDT deposit.</p><div class=\"space-y-3\"><p><span class=\"font-bold text-[#1c1a1a]\">Event Allocation:</span> 117,000,000 WIN.</p><p><span class=\"font-bold text-[#1c1a1a]\">Key Role:</span> It finalizes price discovery from the Pre-IDO and sets WIN's initial trading price on WinSwap.</p><div class=\"mt-4\"><p class=\"font-bold text-[#1c1a1a] mb-2\">Prizes (determined by the contract):</p><ol class=\"list-decimal pl-5 space-y-2\"><li><span class=\"font-bold text-[#1c1a1a]\">WIN Prize:</span> WIN tokens worth 130%-275% of your deposit.</li><li><span class=\"font-bold text-[#1c1a1a]\">USDT Prize:</span> 101%-130% of your deposit.</li></ol></div></div>",
+        "q4": "What is Windora",
+        "a4": "<p class=\"mb-4\">Windora is the official DApp launchpad of the AlwaysWin protocol and a competitive arena for users to earn WIN. As a launchpad, it hosts a curated selection of high-quality raffle and strategy DApps built by the community, which enriches the protocol's ecosystem and empowers developers. More importantly, Windora serves as a long-term arena for users to earn rewards through multiple avenues, such as winning games or sharing to earn on-chain commissions.</p><p>Crucially, every DApp on Windora integrates a unique <span class=\"font-bold text-[#1c1a1a]\">token-burning mechanism</span>. This ensures that all gameplay and participation directly contribute to the long-term value growth of the WIN token, creating a powerful, self-sustaining economy where everyone benefits.</p>",
         "q5": "When does the Pre-IDO end?",
-        "a5": "The Pre-IDO phase ends once the initial allocation is fully subscribed or when the countdown reaches zero, transitioning the protocol to the Raffle-IDO stage."
+        "a5": "The Pre-IDO does not have a fixed end date. The event will definitively conclude once the 80% sales hard cap is reached."
     },
     "footer": {
         "copyright": "2022-2025 - AlwaysWin.",
