@@ -1,3 +1,17 @@
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+
+const videoRef = ref<HTMLVideoElement | null>(null);
+
+onMounted(() => {
+    if (videoRef.value) {
+        videoRef.value.play().catch(error => {
+            console.log("Autoplay prevented:", error);
+        });
+    }
+});
+</script>
+
 <template>
   <section class="relative bg-white pt-24 pb-0 overflow-hidden">
     <!-- Background Glows -->
@@ -37,15 +51,17 @@
 
         <!-- Visualization -->
         <div class="relative w-full my-12 sm:-mt-16 sm:mb-48 overflow-hidden pointer-events-none">
-             <video 
-                 src="/videos/final%20marcel.mp4" 
-                 poster="/Vector 13graphy.png" 
-                 autoplay 
-                 muted 
-                 loop 
-                 playsinline 
-                 class="w-full h-auto object-contain scale-y-[1.01] origin-top translate-y-[2%]"
-             ></video>
+                 <video 
+                     ref="videoRef"
+                     src="/videos/final_marcel.mp4" 
+                     poster="/protocol_journey_poster.png" 
+                     autoplay 
+                     muted 
+                     loop 
+                     playsinline 
+                     webkit-playsinline
+                     class="w-full h-auto object-contain scale-y-[1.01] origin-top translate-y-[2%]"
+                 ></video>
         </div>
 
       </div>
