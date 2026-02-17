@@ -4,24 +4,12 @@ import { ref, onMounted } from 'vue';
 const videoRef = ref<HTMLVideoElement | null>(null);
 
 onMounted(() => {
+    // Simple play attempt on mount, similar to standard behavior
     if (videoRef.value) {
-        // Explicitly set properties for better mobile support
-        videoRef.value.muted = true;
-        videoRef.value.playsInline = true;
-        videoRef.value.setAttribute('playsinline', '');
-        videoRef.value.setAttribute('webkit-playsinline', '');
-        
-        const playPromise = videoRef.value.play();
-        if (playPromise !== undefined) {
-            playPromise.catch(error => {
-                console.log("Autoplay prevented:", error);
-                // Force mute and try again if failed
-                if (videoRef.value) {
-                    videoRef.value.muted = true;
-                    videoRef.value.play().catch(e => console.log("Retry failed:", e));
-                }
-            });
-        }
+        videoRef.value.play().catch(() => {
+            // Put mute back if auto-play fails
+            if (videoRef.value) videoRef.value.muted = true;
+        });
     }
 });
 </script>
@@ -68,13 +56,10 @@ onMounted(() => {
                  <video 
                      ref="videoRef"
                      src="/videos/FinalGraph.mp4" 
-                     poster="/protocol_journey_poster.png" 
                      autoplay 
                      muted 
                      loop 
                      playsinline 
-                     webkit-playsinline
-                     preload="auto"
                      class="w-full h-auto object-contain scale-y-[1.01] origin-top translate-y-[2%]"
                  ></video>
         </div>
