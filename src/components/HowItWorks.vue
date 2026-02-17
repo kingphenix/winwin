@@ -118,13 +118,13 @@
       <!-- Detailed Text Section -->
       <div class="mt-20 space-y-12 sm:space-y-16">
         <div class="reveal">
-          <p class="text-[24px] sm:text-[30px] leading-[39px] sm:leading-[60px] font-normal tracking-[-0.05em] font-['Inter']">
+          <p class="text-[18px] sm:text-[24px] leading-[28px] sm:leading-[40px] font-normal tracking-[-0.05em] font-['Inter']">
             <span class="text-[#1c1a1a]">{{ $t('hero.detailed1_1') }}</span>
             <span class="text-[#1c1a1a]/40">{{ $t('hero.detailed1_2') }}</span>
           </p>
         </div>
         <div class="reveal">
-          <p class="text-[24px] sm:text-[30px] leading-[39px] sm:leading-[60px] font-normal tracking-[-0.05em] font-['Inter']">
+          <p class="text-[18px] sm:text-[24px] leading-[28px] sm:leading-[40px] font-normal tracking-[-0.05em] font-['Inter']">
             <span class="text-[#1c1a1a]">{{ $t('hero.detailed2_1') }}</span>
             <span class="text-[#1c1a1a]/40">
               <template v-if="!isExpanded">
@@ -149,7 +149,7 @@
           </p>
         </div>
         <div class="reveal" :class="{ 'hidden sm:block': !isExpanded }">
-          <p class="text-[24px] sm:text-[30px] leading-[39px] sm:leading-[60px] font-normal tracking-[-0.05em] font-['Inter']">
+          <p class="text-[18px] sm:text-[24px] leading-[28px] sm:leading-[40px] font-normal tracking-[-0.05em] font-['Inter']">
             <span class="text-[#1c1a1a]">{{ $t('hero.detailed3_1') }}</span>
             <span class="text-[#1c1a1a]/40">
               {{ $t('hero.detailed3_2') }}

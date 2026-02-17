@@ -1,16 +1,21 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 
-const videoRef = ref<HTMLVideoElement | null>(null);
+const desktopVideoRef = ref<HTMLVideoElement | null>(null);
+const mobileVideoRef = ref<HTMLVideoElement | null>(null);
 
 onMounted(() => {
-    // Simple play attempt on mount, similar to standard behavior
-    if (videoRef.value) {
-        videoRef.value.play().catch(() => {
-            // Put mute back if auto-play fails
-            if (videoRef.value) videoRef.value.muted = true;
-        });
-    }
+    // Attempt to play both videos on mount
+    const playVideo = (videoEl: HTMLVideoElement | null) => {
+        if (videoEl) {
+            videoEl.play().catch(() => {
+                if (videoEl) videoEl.muted = true;
+            });
+        }
+    };
+
+    playVideo(desktopVideoRef.value);
+    playVideo(mobileVideoRef.value);
 });
 </script>
 
@@ -53,14 +58,25 @@ onMounted(() => {
 
         <!-- Visualization -->
         <div class="relative w-full my-12 sm:-mt-16 sm:mb-48 overflow-hidden pointer-events-none">
+                 <!-- Desktop Video -->
                  <video 
-                     ref="videoRef"
+                     ref="desktopVideoRef"
                      src="/videos/FinalGraph.mp4" 
                      autoplay 
                      muted 
                      loop 
                      playsinline 
-                     class="w-full h-auto object-contain scale-y-[1.01] origin-top translate-y-[2%]"
+                     class="hidden sm:block w-full h-full object-cover transition-transform duration-700 scale-[1.03]"
+                 ></video>
+                 <!-- Mobile Video -->
+                 <video 
+                     ref="mobileVideoRef"
+                     src="/videos/MobileGraph.mp4" 
+                     autoplay 
+                     muted 
+                     loop 
+                     playsinline 
+                     class="block sm:hidden w-full h-full object-cover transition-transform duration-700 scale-[1.03]"
                  ></video>
         </div>
 
