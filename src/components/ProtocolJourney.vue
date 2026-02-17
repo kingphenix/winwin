@@ -112,7 +112,7 @@ onMounted(() => {
                      loop 
                      playsinline
                      preload="auto"
-                     class="hidden sm:block w-full h-full object-cover transition-transform duration-700 scale-[1.03]"
+                     class="hidden sm:block w-full h-auto object-cover transition-transform duration-700 scale-[1.03]"
                  >
                      <source src="/videos/FinalGraph.mp4" type="video/mp4" />
                  </video>
@@ -124,7 +124,7 @@ onMounted(() => {
                      loop 
                      playsinline
                      preload="auto"
-                     class="block sm:hidden w-full h-full object-cover transition-transform duration-700 scale-[1.03]"
+                     class="block sm:hidden w-full h-auto object-cover transition-transform duration-700 scale-[1.03]"
                  >
                      <source src="/videos/MobileGraph.mp4" type="video/mp4" />
                  </video>
