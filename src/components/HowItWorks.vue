@@ -116,7 +116,7 @@
       </div>
 
       <!-- Detailed Text Section -->
-      <div class="mt-20 space-y-12 sm:space-y-16">
+      <div class="mt-8 sm:mt-20 space-y-6 sm:space-y-16">
         <div class="reveal">
           <p class="text-[18px] sm:text-[24px] leading-[28px] sm:leading-[40px] font-normal tracking-[-0.05em] font-['Inter']">
             <span class="text-[#1c1a1a]">{{ $t('hero.detailed1_1') }}</span>
