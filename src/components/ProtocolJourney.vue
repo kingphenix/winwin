@@ -1,21 +1,67 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const desktopVideoRef = ref<HTMLVideoElement | null>(null);
 const mobileVideoRef = ref<HTMLVideoElement | null>(null);
 
 onMounted(() => {
-    // Attempt to play both videos on mount
-    const playVideo = (videoEl: HTMLVideoElement | null) => {
-        if (videoEl) {
-            videoEl.play().catch(() => {
-                if (videoEl) videoEl.muted = true;
-            });
+    // Enhanced playback attempt with mobile browser handling
+    const playVideo = async (videoEl: HTMLVideoElement | null) => {
+        if (!videoEl) return;
+        
+        try {
+            // Ensure muted before attempting to play (critical for mobile autoplay)
+            videoEl.muted = true;
+            
+            // Load the video
+            videoEl.load();
+            
+            // Attempt to play
+            await videoEl.play();
+        } catch (error) {
+            console.warn('Video autoplay failed, will retry on user interaction:', error);
+            
+            // Fallback: Try again on first user interaction
+            const attemptPlay = async () => {
+                try {
+                    videoEl.muted = true;
+                    await videoEl.play();
+                    document.removeEventListener('touchstart', attemptPlay);
+                    document.removeEventListener('click', attemptPlay);
+                } catch (e) {
+                    console.error('Video play retry failed:', e);
+                }
+            };
+            
+            document.addEventListener('touchstart', attemptPlay, { once: true });
+            document.addEventListener('click', attemptPlay, { once: true });
         }
     };
 
-    playVideo(desktopVideoRef.value);
-    playVideo(mobileVideoRef.value);
+    // Use IntersectionObserver for better mobile performance
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const video = entry.target as HTMLVideoElement;
+                    playVideo(video);
+                }
+            });
+        },
+        { threshold: 0.25 }
+    );
+
+    if (desktopVideoRef.value) {
+        observer.observe(desktopVideoRef.value);
+    }
+    if (mobileVideoRef.value) {
+        observer.observe(mobileVideoRef.value);
+    }
+
+    // Cleanup
+    onUnmounted(() => {
+        observer.disconnect();
+    });
 });
 </script>
 
@@ -61,23 +107,27 @@ onMounted(() => {
                  <!-- Desktop Video -->
                  <video 
                      ref="desktopVideoRef"
-                     src="/videos/FinalGraph.mp4" 
                      autoplay 
                      muted 
                      loop 
-                     playsinline 
+                     playsinline
+                     preload="auto"
                      class="hidden sm:block w-full h-full object-cover transition-transform duration-700 scale-[1.03]"
-                 ></video>
+                 >
+                     <source src="/videos/FinalGraph.mp4" type="video/mp4" />
+                 </video>
                  <!-- Mobile Video -->
                  <video 
                      ref="mobileVideoRef"
-                     src="/videos/MobileGraph.mp4" 
                      autoplay 
                      muted 
                      loop 
-                     playsinline 
+                     playsinline
+                     preload="auto"
                      class="block sm:hidden w-full h-full object-cover transition-transform duration-700 scale-[1.03]"
-                 ></video>
+                 >
+                     <source src="/videos/MobileGraph.mp4" type="video/mp4" />
+                 </video>
         </div>
 
       </div>
