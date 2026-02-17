@@ -7,14 +7,11 @@ const mobileVideoRef = ref<HTMLVideoElement | null>(null);
 onMounted(() => {
     // Enhanced playback attempt with mobile browser handling
     const playVideo = async (videoEl: HTMLVideoElement | null) => {
-        if (!videoEl) return;
+        if (!videoEl || !videoEl.paused) return;
         
         try {
             // Ensure muted before attempting to play (critical for mobile autoplay)
             videoEl.muted = true;
-            
-            // Load the video
-            videoEl.load();
             
             // Attempt to play
             await videoEl.play();
