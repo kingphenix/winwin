@@ -1,65 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
-
-const desktopVideoRef = ref<HTMLVideoElement | null>(null);
-const mobileVideoRef = ref<HTMLVideoElement | null>(null);
-
-onMounted(() => {
-    // Enhanced playback attempt with mobile browser handling
-    const playVideo = async (videoEl: HTMLVideoElement | null) => {
-        if (!videoEl || !videoEl.paused) return;
-        
-        try {
-            // Ensure muted before attempting to play (critical for mobile autoplay)
-            videoEl.muted = true;
-            
-            // Attempt to play
-            await videoEl.play();
-        } catch (error) {
-            console.warn('Video autoplay failed, will retry on user interaction:', error);
-            
-            // Fallback: Try again on first user interaction
-            const attemptPlay = async () => {
-                try {
-                    videoEl.muted = true;
-                    await videoEl.play();
-                    document.removeEventListener('touchstart', attemptPlay);
-                    document.removeEventListener('click', attemptPlay);
-                } catch (e) {
-                    console.error('Video play retry failed:', e);
-                }
-            };
-            
-            document.addEventListener('touchstart', attemptPlay, { once: true });
-            document.addEventListener('click', attemptPlay, { once: true });
-        }
-    };
-
-    // Use IntersectionObserver for better mobile performance
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const video = entry.target as HTMLVideoElement;
-                    playVideo(video);
-                }
-            });
-        },
-        { threshold: 0.25 }
-    );
-
-    if (desktopVideoRef.value) {
-        observer.observe(desktopVideoRef.value);
-    }
-    if (mobileVideoRef.value) {
-        observer.observe(mobileVideoRef.value);
-    }
-
-    // Cleanup
-    onUnmounted(() => {
-        observer.disconnect();
-    });
-});
+// No imports needed for public assets accessed via absolute path
 </script>
 
 <template>
@@ -99,36 +39,31 @@ onMounted(() => {
           </p>
         </div>
 
-        <!-- Visualization -->
-        <div class="relative w-full my-12 sm:-mt-16 sm:mb-48 overflow-hidden pointer-events-none">
+        <!-- Visualization / Video -->
+        <!-- Note: Using w-full and h-auto to ensure video maintains aspect ratio and doesn't collapse. 
+             Videos are in public/ videos folder, so we use absolute path /videos/... -->
+        <div class="relative w-full my-12 sm:-mt-16 sm:mb-48 pointer-events-none">
                  <!-- Desktop Video -->
                  <video 
-                     ref="desktopVideoRef"
+                     src="/videos/FinalGraph.mp4" 
                      autoplay 
                      muted 
                      loop 
-                     playsinline
-                     preload="auto"
+                     playsinline 
                      class="hidden sm:block w-full h-auto object-cover transition-transform duration-700 scale-[1.03]"
-                 >
-                     <source src="/videos/FinalGraph.mp4" type="video/mp4" />
-                 </video>
+                 ></video>
                  <!-- Mobile Video -->
                  <video 
-                     ref="mobileVideoRef"
+                     src="/videos/MobileGraph.mp4" 
                      autoplay 
                      muted 
                      loop 
-                     playsinline
-                     preload="auto"
+                     playsinline 
                      class="block sm:hidden w-full h-auto object-cover transition-transform duration-700 scale-[1.03]"
-                 >
-                     <source src="/videos/MobileGraph.mp4" type="video/mp4" />
-                 </video>
+                 ></video>
         </div>
 
       </div>
-
 
     </div>
 
@@ -162,5 +97,3 @@ onMounted(() => {
     </div>
   </section>
 </template>
-
-
