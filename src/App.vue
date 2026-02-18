@@ -17,9 +17,11 @@
       <div class="reveal">
         <WhyAlwaysWin />
       </div>
+
       <div class="reveal">
         <ProtocolJourney />
       </div>
+
       <div class="reveal">
         <FAQSection />
       </div>
@@ -34,6 +36,7 @@ import NavigationHeader from './components/NavigationHeader.vue'
 import HowItWorks from './components/HowItWorks.vue'
 import WhyAlwaysWin from './components/WhyAlwaysWin.vue'
 import ProtocolJourney from './components/ProtocolJourney.vue'
+
 import FAQSection from './components/FAQSection.vue'
 import FooterSection from './components/FooterSection.vue'
 

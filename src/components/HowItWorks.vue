@@ -43,11 +43,11 @@
         <div class="reveal">
           <div class="bg-white border sm:border-[3px] border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
             <div 
-              @click="openModal('/videos/Buy%20Scenario.mp4')"
+              @click="openModal('/videos/BUY-SCENARIO.mp4')"
               class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
             >
               <video 
-                src="/videos/Buy%20Scenario.mp4" 
+                src="/videos/BUY-SCENARIO.mp4" 
                 autoplay 
                 muted 
                 loop 
@@ -73,11 +73,11 @@
         <div class="reveal">
           <div class="bg-white border sm:border-[3px] border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
             <div 
-              @click="openModal('/videos/Sell%20scenario.mp4')"
+              @click="openModal('/videos/SELL-SCENARIO.mp4')"
               class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
             >
               <video 
-                src="/videos/Sell%20scenario.mp4" 
+                src="/videos/SELL-SCENARIO.mp4" 
                 autoplay 
                 muted 
                 loop 

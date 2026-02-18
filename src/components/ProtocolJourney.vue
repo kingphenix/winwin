@@ -1,7 +1,3 @@
-<script setup lang="ts">
-// No imports needed for public assets accessed via absolute path
-</script>
-
 <template>
   <section class="relative bg-white pt-24 pb-0 overflow-hidden">
     <!-- Background Glows -->
@@ -17,7 +13,7 @@
         <h2 class="text-4xl sm:text-6xl md:text-[64px] font-bold tracking-tight text-[#1c1a1a] mb-8 leading-[1.05]">
           {{ $t('valueGrowth.title').split('WIN')[0] }}<span class="text-transparent bg-clip-text bg-[linear-gradient(90deg,#23B672_85.1%,#F0B90B_100%)] font-bold">WIN</span>{{ $t('valueGrowth.title').split('WIN')[1].split('design')[0] }}<span class="text-transparent bg-clip-text bg-[linear-gradient(90deg,#23B672_82.22%,#F6C744_100%)] font-bold">design</span>{{ $t('valueGrowth.title').split('design')[1] }}
         </h2>
-        <p class="text-[15px] sm:text-xl text-[#1c1a1a] max-w-5xl mb-10 leading-relaxed font-medium">
+        <p class="text-lg sm:text-xl text-[#1c1a1a] max-w-5xl mb-10 leading-relaxed font-medium">
             {{ $t('valueGrowth.description') }}
         </p>
         <button class="group w-[45%] sm:w-auto px-6 py-3.5 sm:px-10 sm:py-5 rounded-full bg-gradient-to-r from-[#E54859] to-[#D43547] text-white text-[14px] sm:text-lg font-bold flex items-center justify-center gap-2 sm:gap-3 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300">
@@ -30,45 +26,30 @@
 
       <!-- Protocol Journey Section -->
       <div class="relative">
-        <div class="reveal">
+        <div class="reveal px-6 md:px-0">
           <h3 class="text-3xl sm:text-5xl font-bold text-[#1c1a1a] mb-6 tracking-tight">
               {{ $t('protocolJourney.title') }}
           </h3>
-          <p class="text-[15px] sm:text-xl text-[#1c1a1a] max-w-5xl mb-8 md:mb-16 leading-relaxed font-medium">
+          <p class="text-lg sm:text-xl text-[#1c1a1a]/50 max-w-5xl mb-16 leading-relaxed font-medium">
               {{ $t('protocolJourney.subtitle') }}
           </p>
         </div>
 
-        <!-- Visualization / Video -->
-        <!-- Note: Using w-full and h-auto to ensure video maintains aspect ratio and doesn't collapse. 
-             Videos are in public/ videos folder, so we use absolute path /videos/... -->
-        <div class="relative w-full my-12 sm:-mt-16 sm:mb-48 pointer-events-none">
-                 <!-- Desktop Video -->
-                 <video 
-                     src="/videos/FinalGraph.mp4" 
-                     autoplay 
-                     muted 
-                     loop 
-                     playsinline 
-                     class="hidden sm:block w-full h-auto object-cover transition-transform duration-700 scale-[1.03]"
-                 ></video>
-                 <!-- Mobile Video -->
-                 <video 
-                     src="/videos/MobileGraph.mp4" 
-                     autoplay 
-                     muted 
-                     loop 
-                     playsinline 
-                     class="block sm:hidden w-full h-auto object-cover transition-transform duration-700 scale-[1.03]"
-                 ></video>
-        </div>
+        <!-- Visualization (Graph GIF) -->
+         <div class="relative w-full mt-12 mb-32 rounded-3xl overflow-hidden shadow-2xl">
+              <img src="/videos/Graph.gif" alt="Protocol Journey Graph" class="w-full h-auto block" />
+          </div>
+        
+        <!-- Mobile-specific spacing adjustment -->
+        <div class="md:hidden mb-12"></div>
 
       </div>
+
 
     </div>
 
     <!-- CTA Section -->
-    <div class="w-full bg-[#23B672] py-16 sm:py-24 mt-0 reveal">
+    <div class="w-full bg-[#23B672] py-16 sm:py-24 mt-20 reveal">
         <div class="max-w-5xl mx-auto px-6">
             <div class="bg-white rounded-[40px] px-6 py-12 sm:px-8 sm:py-16 md:p-24 text-center shadow-none sm:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.1)] border-0 sm:border-2 border-black/5">
                 <h2 class="text-[28px] sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#1c1a1a] mb-6 sm:mb-8 leading-tight">
@@ -97,3 +78,6 @@
     </div>
   </section>
 </template>
+
+<script setup>
+</script>
