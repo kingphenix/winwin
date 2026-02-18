@@ -26,23 +26,35 @@
 
       <!-- Protocol Journey Section -->
       <div class="relative">
-        <div class="reveal px-6 md:px-0">
+        <div class="reveal text-center md:text-left">
           <h3 class="text-3xl sm:text-5xl font-bold text-[#1c1a1a] mb-6 tracking-tight">
               {{ $t('protocolJourney.title') }}
           </h3>
-          <p class="text-lg sm:text-xl text-[#1c1a1a]/50 max-w-5xl mb-16 leading-relaxed font-medium">
+          <p class="text-lg sm:text-xl text-[#1c1a1a]/50 max-w-5xl mb-16 leading-relaxed font-medium mx-auto md:mx-0">
               {{ $t('protocolJourney.subtitle') }}
           </p>
         </div>
 
         <!-- Visualization (Graph GIF) -->
-         <div class="relative w-full mt-12 mb-16 sm:mb-32 rounded-3xl overflow-hidden shadow-2xl bg-gray-50 min-h-[200px]">
+          <div class="relative w-full mt-12 mb-16 sm:mb-32 rounded-3xl overflow-hidden shadow-2xl bg-gray-50 min-h-[200px]">
+              <!-- Desktop: Graph GIF -->
               <img 
                 src="/videos/graph.gif" 
                 alt="Protocol Journey Graph" 
-                class="w-full h-auto block transform-gpu"
+                class="w-full h-auto hidden md:block transform-gpu"
                 loading="lazy"
               />
+              
+              <!-- Mobile: Vidgraph.mp4 -->
+              <video 
+                src="/videos/Vidgraph.mp4"
+                class="w-full h-auto block md:hidden object-cover transform-gpu"
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                preload="metadata"
+              ></video>
           </div>
         
         <!-- Mobile-specific spacing adjustment -->
