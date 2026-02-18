@@ -47,7 +47,7 @@
               
               <!-- Mobile: Vidgraph.mp4 -->
               <video 
-                src="/videos/Vidgraph.mp4"
+                :src="'/videos/Vidgraph.mp4'"
                 class="w-full h-auto block md:hidden object-cover transform-gpu"
                 autoplay 
                 muted 

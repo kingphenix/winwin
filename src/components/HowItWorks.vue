@@ -47,7 +47,7 @@
               class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
             >
               <video 
-                src="/videos/buy-scenario.mp4" 
+                :src="'/videos/buy-scenario.mp4'" 
                 autoplay 
                 muted 
                 loop 
@@ -78,7 +78,7 @@
               class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
             >
               <video 
-                src="/videos/sell-scenario.mp4" 
+                :src="'/videos/sell-scenario.mp4'" 
                 autoplay 
                 muted 
                 loop 
