@@ -37,18 +37,9 @@
 
         <!-- Visualization (Graph GIF) -->
           <div class="relative w-full mt-12 mb-16 sm:mb-32 rounded-3xl overflow-hidden shadow-2xl bg-gray-50 min-h-[200px]">
-              <!-- Desktop: Graph GIF -->
-              <img 
-                :src="'/videos/graph.gif'" 
-                alt="Protocol Journey Graph" 
-                class="w-full h-auto hidden md:block transform-gpu"
-                loading="lazy"
-              />
-              
-              <!-- Mobile: Vidgraph.mp4 -->
               <video 
                 :src="'/videos/Vidgraph.mp4'"
-                class="w-full h-auto block md:hidden object-cover transform-gpu"
+                class="w-full h-auto block object-cover transform-gpu"
                 autoplay 
                 muted 
                 loop 
