@@ -36,8 +36,13 @@
         </div>
 
         <!-- Visualization (Graph GIF) -->
-         <div class="relative w-full mt-12 mb-32 rounded-3xl overflow-hidden shadow-2xl">
-              <img src="/videos/Graph.gif" alt="Protocol Journey Graph" class="w-full h-auto block" />
+         <div class="relative w-full mt-12 mb-16 sm:mb-32 rounded-3xl overflow-hidden shadow-2xl bg-gray-50 min-h-[200px]">
+              <img 
+                src="/videos/graph.gif" 
+                alt="Protocol Journey Graph" 
+                class="w-full h-auto block transform-gpu"
+                loading="lazy"
+              />
           </div>
         
         <!-- Mobile-specific spacing adjustment -->
