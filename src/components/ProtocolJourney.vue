@@ -39,7 +39,7 @@
           <div class="relative w-full mt-12 mb-16 sm:mb-32 rounded-3xl overflow-hidden shadow-2xl bg-gray-50 min-h-[200px]">
               <!-- Desktop: Graph GIF -->
               <img 
-                src="/videos/graph.gif" 
+                :src="'/videos/graph.gif'" 
                 alt="Protocol Journey Graph" 
                 class="w-full h-auto hidden md:block transform-gpu"
                 loading="lazy"
