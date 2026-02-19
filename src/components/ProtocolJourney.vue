@@ -38,7 +38,7 @@
         <!-- Visualization (Graph GIF) -->
           <div class="relative w-full mt-12 mb-16 sm:mb-32 rounded-3xl overflow-hidden shadow-2xl bg-gray-50 min-h-[200px]">
               <video 
-                :src="'/videos/protocol-graph.mp4'"
+                :src="'/videos/protocol-journey-graph.mp4'"
                 class="w-full h-auto block object-cover transform-gpu"
                 autoplay 
                 muted 
