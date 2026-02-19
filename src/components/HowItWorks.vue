@@ -44,7 +44,7 @@
           <div class="bg-white border sm:border-[3px] border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
             <div 
               @click="openModal('/videos/buy-scenario.mp4')"
-              class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
+              class="group w-full h-[220px] sm:h-[420px] bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
             >
               <video 
                 :src="'/videos/buy-scenario.mp4'" 
@@ -52,7 +52,7 @@
                 muted 
                 loop 
                 playsinline 
-                preload="metadata"
+                preload="auto"
                 class="w-full h-full object-cover transition-transform duration-700 scale-[1.03] group-hover:scale-110"
               ></video>
               <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
@@ -75,7 +75,7 @@
           <div class="bg-white border sm:border-[3px] border-black rounded-[28px] sm:rounded-[48px] p-5 sm:p-10 hover:border-gray-200 transition-all duration-500">
             <div 
               @click="openModal('/videos/sell-scenario.mp4')"
-              class="group w-full bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
+              class="group w-full h-[220px] sm:h-[420px] bg-black rounded-[20px] sm:rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden shadow-inner cursor-pointer border-2 border-black"
             >
               <video 
                 :src="'/videos/sell-scenario.mp4'" 
@@ -83,7 +83,7 @@
                 muted 
                 loop 
                 playsinline 
-                preload="metadata"
+                preload="auto"
                 class="w-full h-full object-cover transition-transform duration-700 scale-[1.03] group-hover:scale-110"
               ></video>
               <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
