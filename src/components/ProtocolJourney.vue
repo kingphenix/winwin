@@ -39,7 +39,7 @@
           <div class="relative w-full mt-12 mb-16 sm:mb-32 rounded-3xl overflow-hidden shadow-2xl bg-gray-50 min-h-[200px]">
               <video 
                 :src="'/videos/protocol-journey-graph.mp4'"
-                class="w-full h-auto block object-cover transform-gpu scale-[1.01]"
+                class="w-full h-auto block object-cover transform-gpu scale-[1.03] translate-y-[3%]"
                 autoplay 
                 muted 
                 loop 
